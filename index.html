@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boop</title>
+        <style>
+            body {
+                background-color: #000000;
+                text-align: center;
+                font-family: monospace;
+            }
+            img {
+                cursor: grab;
+            }
+            img:active {
+                cursor: grabbing;
+            }
+            a {
+                text-align: left;
+                position: fixed;
+                bottom: 2px;
+                left: 5px;
+                color: #ffffff;
+            }
+        </style>
+        <script>
+            var catArray = ["jinx1.jpg", "2.png", "3.png"];
+
+            function catLoader() {
+                var randNum = Math.floor(Math.random() * catArray.length);
+                document.canvas.src = "cats/" + catArray[randNum];
+            }
+        </script>
+    </head>
+    <body onload="catLoader();">
+        <img src="blank.png" name="canvas" height="300">
+        <a href="https://github.com/browsky300">my github</a>
+    </body>
+</html>
+
+<!--crazy code :O-->
